@@ -20,6 +20,7 @@ http.createServer(function (req, res) {
     else {
       res.writeHead(200, { 'content-type': 'text/html' })
       res.write(data);
+      return res.end();
     }
   });
  
